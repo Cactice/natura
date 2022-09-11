@@ -69,7 +69,7 @@ use std::time::Duration;
 /// // Then, in your update loop:
 /// let (x_new, x_vel_new) = s.update(x, x_vel, 10.0); // update the X position
 /// let (y_new, y_vel_new) = s.update(y, y_vel, 20.0); // update the Y position///
-#[derive(Default)]
+#[derive(Default, Clone, Copy)]
 pub struct Spring {
     ///
     pos_pos_coef: f64,
